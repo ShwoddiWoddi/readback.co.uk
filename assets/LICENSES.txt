@@ -1,0 +1,3 @@
+texgyreheros-*.woff — TeX Gyre Heros by GUST e-foundry, GUST Font License (GFL).
+Subset to Latin and converted to WOFF for web use. https://www.gust.org.pl/projects/e-foundry/tex-gyre
+Stand-in until the brand typeface is identified and licensed.

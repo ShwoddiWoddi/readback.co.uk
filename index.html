@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Readback — coming soon</title>
+<meta name="description" content="Readback is the holding company behind Rdbk Games. Our new website is coming soon.">
+<link rel="canonical" href="https://readback.co.uk/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Readback">
+<meta property="og:title" content="Readback — coming soon">
+<meta property="og:description" content="The holding company behind Rdbk Games. Our new website is coming soon.">
+<meta property="og:url" content="https://readback.co.uk/">
+<meta property="og:image" content="https://readback.co.uk/assets/cd-splash-1280.jpg">
+<meta name="theme-color" content="#0B0F0E">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+@font-face { font-family: "Heros"; src: url("assets/texgyreheros-regular.woff") format("woff"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Heros"; src: url("assets/texgyreheros-bold.woff") format("woff"); font-weight: 700; font-display: swap; }
+:root {
+  --charcoal: #0B0F0E;
+  --stone: #D7D2C6;
+  --offwhite: #F8F7F4;
+  --mineral-light: #7FB8A9;
+}
+* { box-sizing: border-box; margin: 0; }
+html { background: var(--charcoal); color: var(--offwhite); }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Heros", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.top {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(3rem, 9vh, 6.5rem) 1.5rem clamp(2rem, 5vh, 3.5rem);
+}
+.readback { width: min(26rem, 78vw); height: auto; }
+.status {
+  margin-top: clamp(2.25rem, 6vh, 3.75rem);
+  font-size: clamp(1.75rem, 4.2vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.status__rule {
+  display: block;
+  width: 3rem;
+  height: 3px;
+  margin: 1.1rem auto 0;
+  background: var(--mineral-light);
+}
+.lede {
+  margin-top: 1.25rem;
+  max-width: 34rem;
+  color: var(--stone);
+  font-size: clamp(1rem, 1.6vw, 1.125rem);
+}
+.studio {
+  margin-top: clamp(2.5rem, 6vh, 4rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+.studio__label {
+  color: var(--stone);
+  font-size: 0.75rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+.rdbk { width: min(13rem, 46vw); height: auto; }
+.splash {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  line-height: 0;
+}
+.splash img {
+  width: 100%;
+  height: auto;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 14%);
+          mask-image: linear-gradient(to bottom, transparent 0, #000 14%);
+}
+.splash figcaption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 2.5rem 1.5rem 1rem;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--offwhite);
+  background: linear-gradient(to top, rgba(11,15,14,.85), rgba(11,15,14,0));
+}
+footer {
+  padding: 1.25rem 1.5rem 1.5rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--stone);
+}
+</style>
+</head>
+<body>
+<main class="top">
+  <h1><img class="readback" src="assets/readback-wordmark-reverse.png" width="734" height="128" alt="Readback"></h1>
+  <p class="status">Coming soon<span class="status__rule" aria-hidden="true"></span></p>
+  <p class="lede">Readback is the holding company behind Rdbk Games. Our new website is on its way.</p>
+  <div class="studio">
+    <span class="studio__label">Home of</span>
+    <img class="rdbk" src="assets/rdbk-games-lockup.png" width="800" height="266" alt="Rdbk Games">
+  </div>
+</main>
+<figure class="splash">
+  <picture>
+    <source type="image/webp" srcset="assets/cd-splash-1280.webp 1280w, assets/cd-splash-1920.webp 1920w" sizes="(min-width: 1920px) 1920px, 100vw">
+    <img src="assets/cd-splash-1920.jpg" srcset="assets/cd-splash-1280.jpg 1280w, assets/cd-splash-1920.jpg 1920w" sizes="(min-width: 1920px) 1920px, 100vw" width="1920" height="1080" alt="Clearance Delivery: an airport at dusk, with aircraft at the gates and the control tower behind">
+  </picture>
+  <figcaption>Clearance Delivery, the first game from Rdbk Games, is in development.</figcaption>
+</figure>
+<footer>&copy; <span data-year>2026</span> Readback</footer>
+<script>document.querySelectorAll('[data-year]').forEach(function(n){n.textContent=new Date().getFullYear()})</script>
+</body>
+</html>
